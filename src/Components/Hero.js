@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
           <div className="text-start p-5">
             <button className="btn">
-              Dukung Kami
+              Dukungan
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
