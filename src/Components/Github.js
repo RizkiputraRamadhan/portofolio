@@ -3,45 +3,45 @@ import React, { useEffect, useState } from "react";
 const GitHub = () => {
   const [projects, setProjects] = useState([]);
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await axios.get(
-          "https://api.github.com/users/RizkiputraRamadhan/repos",
-          {
-            headers: {
-              Authorization:
-                "Bearer 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",
-            },
-          }
-        );
-        // Mendapatkan data bahasa untuk setiap proyek
-        const projectsWithLanguages = await Promise.all(
-          response.data.map(async (project) => {
-            const languagesResponse = await axios.get(
-              `https://api.github.com/repos/RizkiputraRamadhan/${project.name}/languages`,
-              {
-                headers: {
-                  Authorization:
-                    "Bearer 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",
-                },
-              }
-            );
+useEffect(() => {
+  const fetchProjects = async () => {
+    try {
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_URL}/users/RizkiputraRamadhan/repos`,
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
+          },
+        }
+      );
 
-            return {
-              ...project,
-              languages: Object.keys(languagesResponse.data),
-            };
-          })
-        );
-        setProjects(projectsWithLanguages);
-      } catch (error) {
-        console.error("Error fetching GitHub projects:", error);
-      }
-    };
+      const projectsWithLanguages = await Promise.all(
+        response.data.map(async (project) => {
+          const languagesResponse = await axios.get(
+            `${process.env.REACT_APP_API_URL}/repos/RizkiputraRamadhan/${project.name}/languages`,
+            {
+              headers: {
+                Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
+              },
+            }
+          );
 
-    fetchProjects();
-  }, []);
+          return {
+            ...project,
+            languages: Object.keys(languagesResponse.data),
+          };
+        })
+      );
+
+      setProjects(projectsWithLanguages);
+    } catch (error) {
+      console.error("Error fetching GitHub projects:", error);
+    }
+  };
+
+  fetchProjects();
+}, []);
+
   return (
     <div className="justify-center">
       <div className="text-2xl w-34 mb-3 font-bold sm:text-4xl text-gray-50 divider divider-primary ">
