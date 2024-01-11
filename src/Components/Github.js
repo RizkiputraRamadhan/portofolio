@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 const GitHub = () => {
   const [projects, setProjects] = useState([]);
 
+
 useEffect(() => {
   const fetchProjects = async () => {
     try {
