@@ -11,7 +11,7 @@ const GitHub = () => {
           {
             headers: {
               Authorization:
-                "Bearer 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",
+                "Bearer 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",
             },
           }
         );
@@ -23,7 +23,7 @@ const GitHub = () => {
               {
                 headers: {
                   Authorization:
-                    "Bearer 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",
+                    "Bearer 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",
                 },
               }
             );
