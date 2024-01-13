@@ -18,7 +18,7 @@ function App() {
       <About />
       <Lecturer />
       <LogosSkills />
-      <Cv />
+      <div className="mb-10"><Cv /></div>
       <GitHub />
       <Qoutes />
       <Banner />

@@ -33,11 +33,13 @@ const About = () => {
                     <span className="dark:text-gray-400">03 November 2004</span>
                   </span>
                   <span className="flex items-center space-x-2">
-                  <i class="fa-solid fa-map-location-dot"></i>
-                    <span className="dark:text-gray-400">RT 01/10, Desa Tipar Kec Rawalo Kab Banyumas</span>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span className="dark:text-gray-400">
+                      RT 01/10, Desa Tipar Kec Rawalo Kab Banyumas
+                    </span>
                   </span>
                   <span className="flex items-center space-x-2">
-                  <i class="fa-solid fa-laptop-code"></i>
+                    <i class="fa-solid fa-laptop-code"></i>
                     <span className="dark:text-gray-400">Web Development</span>
                   </span>
                 </div>
@@ -47,7 +49,7 @@ const About = () => {
           <div className="flex justify-center pt-4 space-x-4 align-center">
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="https://github.com/RizkiputraRamadhan"
               aria-label="GitHub"
               className="rounded-md  hover:text-violet-400"
             >
@@ -55,7 +57,7 @@ const About = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="https://wa.me/6285600565597?text=Hi Kuli IT Tecno"
               aria-label="whatsapp"
               className="rounded-md text-gray-100 hover:text-violet-400"
             >
@@ -63,7 +65,7 @@ const About = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="https://www.instagram.com/sukherbyvir45/"
               aria-label="instagram"
               className="rounded-md text-gray-100 hover:text-violet-400"
             >
@@ -71,7 +73,7 @@ const About = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="https://www.linkedin.com/in/rizki-putra-ramadhan-4a937a289/"
               aria-label="Likenid"
               className="rounded-md text-gray-100 hover:text-violet-400"
             >
@@ -79,7 +81,7 @@ const About = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="mailto:poetraarromadhon56@gmail.com"
               aria-label="Email"
               className="rounded-md text-gray-100 hover:text-violet-400"
             >
