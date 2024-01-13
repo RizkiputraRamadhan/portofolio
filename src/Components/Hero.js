@@ -35,8 +35,7 @@ const Hero = () => {
               <span>RIZKI PUTRA RAMADHAN </span>
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12">
-              Mahasiswa 
-              <span className="font-bold text-violet-400">
+              Mahasiswa <span className="font-bold text-violet-400">
                  Universitas Bina Sarana Informatika Tegal
               </span>
               <br />

@@ -6,9 +6,10 @@ import Hero from "./Components/Hero";
 import Lecturer from "./Components/Lecturer";
 import Navbar from "./Components/Navbar";
 import Qoutes from "./Components/Qoutes";
-import Skils from "./Components/Skils";
+import LogosSkills from "./Components/LogosSkills";
 import Banner from "./Components/Banner";
 import Whatsapp from "./Components/WhatsApp";
+import Cv from "./Components/Cv";
 function App() {
   return (
     <div className="bg-gray-800">
@@ -16,7 +17,8 @@ function App() {
       <Hero />
       <About />
       <Lecturer />
-      <Skils />
+      <LogosSkills />
+      <Cv />
       <GitHub />
       <Qoutes />
       <Banner />
