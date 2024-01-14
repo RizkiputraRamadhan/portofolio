@@ -4,7 +4,7 @@ const About = () => {
       <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 bg-gray-800 text-gray-50">
         <div className="w-full mx-auto space-y-4 text-center">
           <h1 className="text-4xl font-bold leadi md:text-5xl">
-            Identitas Saya
+            Profile Lengkap
           </h1>
           <p className="text-sm text-gray-400">RIZKI PUTRA RAMADHAN</p>
         </div>
