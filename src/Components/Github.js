@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 const GitHub = () => {
   const [projects, setProjects] = useState([]);
-  console.log(projects);
 
   useEffect(() => {
     const fetchProjects = async () => {
