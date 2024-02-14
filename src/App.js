@@ -18,11 +18,15 @@ function App() {
       <About />
       <Lecturer />
       <LogosSkills />
-      <div className="mb-10"><Cv /></div>
+      <div className="mb-10">
+        <Cv />
+      </div>
       <GitHub />
       <Qoutes />
+     
       <Banner />
       <Whatsapp />
+      <script type='text/javascript' src='//pl22497948.profitablegatecpm.com/01/e8/9e/01e89ec3b8f81c15396e60b8b1230c0b.js'></script>
     </div>
   );
 }
