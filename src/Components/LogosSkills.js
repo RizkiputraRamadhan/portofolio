@@ -69,6 +69,7 @@ const LogosSkills = () => {
               className="w-12 h-12 rounded"
             />
           </div>
+          
           <div className="flex flex-col items-center justify-center">
             <div className="flex -space-x-4">
               <img
